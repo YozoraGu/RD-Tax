@@ -4,6 +4,7 @@
 
 <head>
 	<title>R&D </title>
+	<link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!-- Fonts -->
@@ -36,10 +37,10 @@
 						<li class="nav-item">
 							<a class="nav-link nav-page" href="#Clients">Our Clients</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item mr-2">
 							<a class="nav-link nav-page" href="#Estimate">Estimate</a>
 						<li class="nav-item">
-							<a class="btn mr-1 btn-dark btn-rounded text-white" href="#">Login</a>
+							<a class="btn btn-dark btn-rounded text-white" href="#">Login</a>
 						</li>
 					</ul>
 				</div>
@@ -126,21 +127,21 @@
 			<!--Clients logo-->
 		<div class= "row">
 			<div class="col-md-4 text-center">
-				<img class="logoimg" src="assets/images/Hiveel.png"/>
+				<img class="logoimg" src="assets/images/Hiveel(none).png"/>
 			</div>
 			<div class="col-md-4 text-center">
-				<img class="logoimg" src="assets/images/you world.png" />
+				<img class="logoimg" src="assets/images/you world(none).png" />
 			</div>
 			<div class="col-md-4 text-center">
-				<img class="logoimg" src="assets/images/Oben.png" />
+				<img class="logoimg" src="assets/images/Oben(none).png" />
 			</div>
 		</div>
 		<div class= "row">
 			<div class="col-md-6 text-center">
-				<img class="logoimg" src="assets/images/yami.png" />
+				<img class="logoimg" src="assets/images/yami(none).png" />
 			</div>
 			<div class="col-md-6 text-center">
-				<img class="logoimg" src="assets/images/Project Pai.png" />
+				<img class="logoimg" src="assets/images/Project Pai(none).png" />
 			</div>
 		 </div>
 
@@ -194,14 +195,68 @@
 		<!--End of Carousal-->
 
   <!--Estimate-->
-	<div class="container-fluid bg-3 pt-5">
+	<div class="container-fluid bg-3 pt-5" id="Estimate">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 offset-md-3 ">
-					<h3 class="text-center">Estimate<hr /></h3>
+				<div class="col-md-6 offset-md-3">
+					<h3 class="text-center">Estimate Your Refund<hr /></h3>
 				</div>
 			</div>
 		</div>
+		<div class="row pt-5">
+			<div class="col-sm-3">
+			</div>
+		  <div class="col-sm-5 text-left">
+			<h3>Wage Total(W-25)</h3>
+				<p>Estimate how much total you paid you and your employee last year</p>
+			</div>
+		 <div class="col-sm-4">
+			<input type="text" class="shadow-sm rounded bg-white" id="numA"/>
+		 </div>
+ 	  </div>
+		<div class="row pt-5">
+			<div class="col-sm-3">
+			</div>
+		  <div class="col-sm-5 text-left">
+			<h3>Supplies (cost)</h3>
+				<p>Estimate how much tools, equipment, and/or server cost spend on R&D </p>
+			</div>
+		 <div class="col-sm-4">
+			<input type="text" class="shadow-sm rounded bg-white" id="numB"/>
+		 </div>
+ 	  </div><div class="row pt-5">
+			<div class="col-sm-3">
+			</div>
+		  <div class="col-sm-5 text-left">
+			<h3>Consultants (1099s or invoices total) </h3>
+				<p>Estimate how much you paid consultants to help with technology effort</p>
+			</div>
+		 <div class="col-sm-4">
+			<input type="text" class="shadow-sm rounded bg-white" id="numC"/>
+		 </div>
+ 	  </div>
+		<div class="row pt-5">
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-5 text-center">
+				<h3>Your approximate Credits*</h3>
+				<p>*Credit amount may change depending on business facts that are not considered here</p>
+			</div>
+			<div class="col-sm-4">
+			<a class="btn btn-rounded text-white bg-1 btn-calc" value="Calculate" onclick="calc()"> Calculate</a>
+	    </div>
+		</div>
+			<div class="row pb-5">
+				<div class="col-sm-5 text-right">
+			   <input type="text" class="shadow rounded bg-white" id="sum1"readonly="readonly"/>
+		    </div>
+				<div class="col-sm-1">
+					<a class="text-center"style="color:#1abc9c"><h3>to</h3></a>
+				</div>
+				<div class="col-sm-5 text-left">
+					<input type="text" class="shadow 	rounded bg-white" id="sum2"readonly="readonly"/>
+				</div>
+		  </div>
 	</div>
 
 
@@ -211,53 +266,45 @@
 
 	<!-- Footer -->
 	<footer class="border-top bg-dark py-10" id="Contact">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row py-4">
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-6">
-					<h3 class="text-align-left " style="color:#1abc9c">Request demo</h3>
+					<h3 class="text-align-left" style="color:#1abc9c">Request demo</h3>
 					<h3 class="text-left">To schedule a product demo with one of our product consultants, please contact us with your information
 					</h3>
 				</div>
 			</div>
 			<div class="row b-5">
-				<div class="col-md-2">
+				<div class="col-md-3">
 				</div>
-	      <div class="col-md-5">
+	      <div class="col-md-4">
 	          <a class="email info" href="mailto:Zhen@technologycredit.io" style="color:#1abc9c;">
 	            <h4><i class="far fa-envelope mr-2"></i>Zhen@technologycredit.io</h4>
 	          </a>
 	      </div>
-				<div class="col-md-5">
+				<div class="col-md-4">
 					<h4 class="text-align-left"style="color:#1abc9c">Phone: 323-377-3043</h4>
 			 </div>
 		 </div>
-
-			<div class="row py-4">
-				<div class="col-md-6">
+			<div class="row py-5">
+				<div class="col-md-12 text-center">
 					<p class="text-white">
 						Copyright &copy;2018 R&D Tax<br>Website created by Wenhao Gu
 					</p>
-				</div>
-				<div class="col-md-6">
-					<p class="text-white">
-						12300 plaza Rd, Aracida
-					</p>
-					<a class="btn sms-button text-white mr-3" href="https://www.linkedin.com/company/voyager-space-technologies/"><i class="fab fa-linkedin-in"></i></a>
-					<a class="btn sms-button text-white mr-3" href="https://www.facebook.com/voyagerspace/"><i class="fab fa-facebook-f"></i></a>
-					<a class="btn sms-button text-white" href="mailto:"><i class="far fa-envelope my-auto"></i></a>
 				</div>
 			</div>
 		</div>
 	</footer>
 	<!-- End of Footer -->
-
+<!--back to top-->
 	<nav class="navbar navbar-light fixed-bottom text-right bg-none">
 		<a class="col offset-10" href="#top" style="text-decoration: none; color: #1abc9c;">
 			<i class="fas fa-arrow-circle-up animated bounce mb-2" style="font-size: 40px;"></i><br>
 		</a>
 	</nav>
+	<!--end of it-->
 	<!-- JavaScript -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -275,6 +322,15 @@
 			duration: 600
 		}, 150);
 		sr.reveal('.a-item');
+		function calc() {
+        let numA = Number(document.querySelector("#numA").value);
+        let numB = Number(document.querySelector("#numB").value);
+				let numC = Number(document.querySelector("#numC").value);
+        let sum1 = (numA+numB+0.65*numC) * 0.06;
+				let sum2 =(numA+numB+0.65*numC) * 0.1;
+        document.getElementById("sum1").value = sum1;
+				document.getElementById("sum2").value = sum2;
+    }
 	</script>
 </body>
 
