@@ -55,11 +55,19 @@ p {
          color: #1abc9c !important;
      }
 .logoimg{
-  max-width:65%;
-  max-height:65%;
+  max-width:70%;
+  max-height:70%;
   margin:30px;
-  margin-left:120px;
-  margin-right:120px;
+  margin-left:100px;
+  margin-right:100px;
+}
+.worldimg{
+  max-width:80%;
+  max-height:80%;
+  margin:30px;
+  margin-left:100px;
+  margin-right:100px;
+
 }
 
 @media (max-width: 768px) {
@@ -123,23 +131,6 @@ p {
   }
 }
 
-
-.btn-success {
-  margin-top: 250px;
-}
-
-.sms-button {
-  border-radius: 50%;
-  height: 45px;
-  width: 45px;
-  background: #5AB7B2;
-  text-align: center;
-  line-height: 32px;
-}
-
-.sms-button:hover {
-  background: lightgrey;
-}
 
 hr {
    border-top: 1px solid #aaaaaa;
